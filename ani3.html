@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation 4</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .loader {
+            height: 450px;
+            width: 450px;
+            margin: auto;
+            border-radius: 50%;
+            border-top: 10px solid red;
+            border-left: 10px solid blue;
+            border-right: 10px solid green;
+            border-bottom: 10px solid yellow;
+            position: relative;
+            animation-name: ani;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+            animation-delay: 0s;
+            animation-timing-function: linear;
+
+        }
+        @keyframes ani {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loader">
+    </div>
+</body>
+
+</html>
